@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição - Hackton Tech</title>
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
 
+<body>
+    <div class = "container">
+        <form action = "#" method="POST">
+            <H2>Incrição - Hackton 2026</H2>
+
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+
+                <div class="input-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">E-mail Institucional:</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@escola.com" required>
+                </div>
+                <div class="input-group">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="name" name="idade" min="14" max="19" required>
+                </div>
+            </fieldset>
+
+            
+            <fieldset>
+                <legend>Preferência</legend>
+
+                <div class="input-group">
+                    <label for = "trilha">Trilha de Aprendizado:</label>
+                    <select id="trilha" name="trilha">
+                        <option value="frontend">Front-end(HTML/CSS/JS)</option>
+                        <option value="backend">Back-end(Node.js/Python)</option>
+                        <option value="uiux">Design & UX/UI</option>
+                        <option value="hardware">Hardware e Dispositivos</option>
+                    </select>
+                </div>
+                <div class="input-group-inline">
+                    <label>Possui experiência prévia?</label>
+                    <input type="radio" id="sim" name="experiencia" value="sim" checked>
+                    <label for="sim" class="radio-label">Sim</label>
+                    <input type="radio" id="nao" name="experiencia" value="nao">
+                    <label for="nao" class="radio-label">Não</label>
+                </div>
+            </fieldset>
+
+            <div class="input-group">
+                <label for="bio">Por que você quer participar?</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Escreva brevemente..."></textarea>
+            </div>
+
+            <button type="submit">Enviar Inscrição</button>
+
+        </form>
+    </div>    
+</body>
+</html>
